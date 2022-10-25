@@ -16323,6 +16323,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Patryk\\source\\repos\\IamTimCorey\\RPDemoApp\\RPDemo\\Pages\\MyForm.cshtml",
+      "TargetPath": "Pages\\MyForm.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Patryk\\source\\repos\\IamTimCorey\\RPDemoApp\\RPDemo\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
