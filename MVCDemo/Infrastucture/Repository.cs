@@ -4,7 +4,7 @@ using MVCDemo.Models;
 
 namespace MVCDemo.Infrastucture
 {
-    public class Repository: Interface
+    public class Repository: IRepository
     {
         public IQueryable<Car> Cars => demoDBContext.Cars;
         private readonly DemoDBContext demoDBContext;
@@ -14,5 +14,8 @@ namespace MVCDemo.Infrastucture
             this.demoDBContext = demoDBContext;
         }
 
+        public void Add<EntityType>(EntityType entityType) => demoDBContext.Add(entity);
+
+        public void SaveChanges() => demoDBContext.SaveChanges();
     }
 }
