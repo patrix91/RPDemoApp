@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MVCDemo.Models;
 
 namespace MVCDemo.Data
 {
@@ -8,5 +9,7 @@ namespace MVCDemo.Data
         {
             
         }
+
+        public DbSet<Car> Cars { get; set; }
     }
 }
