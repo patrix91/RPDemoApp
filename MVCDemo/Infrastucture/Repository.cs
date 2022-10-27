@@ -1,10 +1,12 @@
-﻿using MVCDemo.Data;
-using MVCDemo.Interfaces;
+﻿using MVCDemo.Interfaces;
+using MVCDemo.Data;
+using MVCDemo.Models;
 
 namespace MVCDemo.Infrastucture
 {
     public class Repository: Interface
     {
+        public IQueryable<Car> Cars => demoDBContext.Cars;
         private readonly DemoDBContext demoDBContext;
 
         public Repository(DemoDBContext demoDBContext)
@@ -12,14 +14,5 @@ namespace MVCDemo.Infrastucture
             this.demoDBContext = demoDBContext;
         }
 
-        public void LoadData()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SaveData()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
