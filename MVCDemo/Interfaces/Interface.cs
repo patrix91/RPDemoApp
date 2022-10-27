@@ -1,8 +1,9 @@
-﻿namespace MVCDemo.Interfaces
+﻿using MVCDemo.Models;
+
+namespace MVCDemo.Interfaces
 {
     interface Interface
     {
-        void LoadData();
-        void SaveData();
+        public IQueryable<Car> Cars { get; }
     }
 }
