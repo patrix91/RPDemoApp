@@ -2,7 +2,7 @@
 
 namespace MVCDemo.Models
 {
-    class FuelCar : Car, IAndroidAudio
+    public class FuelCar : Car, IAndroidAudio
     {
         public FuelCar() : base("vw", "golf") { }
 

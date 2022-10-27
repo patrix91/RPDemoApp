@@ -2,7 +2,7 @@
 
 namespace MVCDemo.Models
 {
-    class ElectricCar : Car, IAndroidAudio
+    public class ElectricCar : Car, IAndroidAudio
     {
         public ElectricCar() : base("Tesla", "p90") { }
         public override Energy EnergyType => Energy.Electric;
