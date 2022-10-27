@@ -1,6 +1,6 @@
 ﻿namespace MVCDemo.Models
 {
-    class Car : Vehicle
+    public class Car : Vehicle
     {
         public Car(string brand, string type)
         {
