@@ -1,6 +1,6 @@
 ﻿namespace MVCDemo.Models
 {
-    abstract class Vehicle
+    abstract public class Vehicle
     {
         public int Speed { get; protected set; }
 
