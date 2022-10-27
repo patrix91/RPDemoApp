@@ -1,7 +1,11 @@
 using MVCDemo.Data;
+using MVCDemo.Infrastucture;
+using MVCDemo.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddTransient<IRepository, Repository>();
 //Dodanie konfiguracji DemoDbContext
 builder.Services.AddDbContext<DemoDBContext>();
 // Add services to the container.
