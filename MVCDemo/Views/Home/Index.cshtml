@@ -1,9 +1,43 @@
-﻿@{
-    ViewData["Title"] = "Strona startowa";
+﻿@model IEnumerable<MVCDemo.Models.Car>
+
+@{
+    ViewData["Title"] = "Index";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Witaj</h1>
-    <p>Naucz się o <a href="https://docs.microsoft.com/aspnet/core">zbuduj aplikację typu Web z technologią ASP.NET
-            Core</a>.</p>
-</div>
+<h1>Pojazdy</h1>
+
+<p>
+    <a asp-action="Create">Wygeneruj dane</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Marka
+            </th>
+            <th>
+                Model
+            </th>
+            <th>
+                Typ silnika
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @* @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Brand
+                </td>
+                <td>
+                    @item.Type
+                </td>
+                <td>
+                    @item.EnergyType
+                </td>
+            </tr>
+        } *@
+    </tbody>
+</table>

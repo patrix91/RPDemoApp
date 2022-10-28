@@ -1,7 +1,7 @@
-﻿namespace MVCDemo.Interfaces
-{
+﻿namespace MVCDemo.Interfaces;
+
     interface IAndroidAudio
     {
         void BluetoothConnection();
     }
-}
+

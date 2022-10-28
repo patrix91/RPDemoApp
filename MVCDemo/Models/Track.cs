@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MVCDemo.Models
+namespace MVCDemo.Models;
+public class Track
 {
-    public class Track
-    {
-    }
 }

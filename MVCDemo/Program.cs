@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using MVCDemo.Data;
 using MVCDemo.Infrastucture;
 using MVCDemo.Interfaces;
@@ -7,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddTransient<IRepository, Repository>();
 //Dodanie konfiguracji DemoDbContext
-builder.Services.AddDbContext<DemoDBContext>();
+builder.Services.AddDbContext<DemoDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("OwneDB")));
+//(options => options.UseInMemoryDatabase("OwneDB"));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
